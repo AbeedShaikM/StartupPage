@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  margin-top: 40px;
+}
+button {
+  margin: 20px;
+  font-size: 30px;
+}
+.custom-btn {
+  width: 150px;
+  height: 60px;
+  color: #fff;
+  border-radius: 12px;
+  padding: 24px 30px;
+  font-family: sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  /* box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1); */
+  outline: none;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.btn-3 {
+  background: #ea5050;
+  /* background: linear-gradient(0deg, #c74f61 0%, #945b63 100%); */
+  width: 150px;
+  height: 60px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-3 span {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #f5f5f5;
+  transition: all 0.3s ease;
+  -webkit-border-radius:12px;
+  -moz-border-radius:12px;
+  -ms-border-radius:12px;
+  -o-border-radius:12px;
+}
+.btn-3:before {
+  height: 0%;
+  width: 0.5px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 0.5px;
+}
+.btn-3:hover {
+  background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover {
+  color: #ea5050;
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #f5f5f5;
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 0.5px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 0.5px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+
+.slide-container {
+  margin: auto;
+  text-align: center;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.wrapper:focus {
+  outline: 0;
+}
+.clash-card {
+  background: #eeeeeef0;
+  width: 60%;
+  display: inline-block;
+  margin: auto;
+  border-radius: 19px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+@media screen and (max-width: 760px) {
+  .clash-card{
+    width:90%;
+  }
+}
+@media (max-width: 760px){
+  .clash-card__unit-stats .one-third .stat{
+    font-size: 20px;
+  }
+}
+.clash-card__image {
+  position: relative;
+  margin-bottom: 10px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.clash-card__unit-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+  padding: 20px;
+  margin-bottom: 10px;
+  line-height: 150%;
+}
+
+.clash-card__unit-stats--barbarian {
+  background: #ea5050;
+}
+.clash-card__unit-stats--barbarian .one-third {
+  border-right: 0.5px solid #46444478;
+}
+
+.clash-card__unit-stats {
+  color: black;
+  font-weight: 700;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.clash-card__unit-stats .one-third {
+  width: 33%;
+  float: left;
+  padding: 20px 15px;
+}
+.clash-card__unit-stats sup {
+  position: absolute;
+  bottom: 4px;
+  font-size: 45%;
+  margin-left: 2px;
+}
+.clash-card__unit-stats .stat {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.clash-card__unit-stats .stat-value {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+}
+.clash-card__unit-stats .no-border {
+  border-right: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+
+.slick-next {
+  right: 100px;
+  z-index: 999;
+}
